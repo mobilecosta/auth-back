@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@crafts/*": ["./src/crafts/*"],
+      "@contexts/*": ["./src/contexts/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@public/*": ["./public/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@test/*": ["./test/*"],
+      "@templates/*": ["./src/templates/*"],
+      "@config/*": ["./src/config/*"],
+      "@services/*": ["./src/services/*"],
+      "@api/*": ["./src/pages/api/*"],
+      "@fixtures/*": ["./test/fixtures/*"],
+      "@usecases/*": ["./src/usecases/*"],
+      "@hof/*": ["./src/hof/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+
